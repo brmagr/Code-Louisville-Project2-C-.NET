@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RequestFormSQLModelStoreContainer" CdmEntityContainer="SQLEntities">
+    <EntitySetMapping Name="FormApps">
+      <EntityTypeMapping TypeName="RequestFormSQLModel.FormApp">
+        <MappingFragment StoreEntitySet="FormApp">
+          <ScalarProperty Name="ProductArea" ColumnName="ProductArea" />
+          <ScalarProperty Name="TargetDate" ColumnName="TargetDate" />
+          <ScalarProperty Name="ClientPriority" ColumnName="ClientPriority" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title_id" ColumnName="Title_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<RequestFormApp.Models.FormApp>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Feature Request Form</h2>
+@{/* Used in order to create a new request form entry */}
+<p>
+    @Html.ActionLink("New Form Entry", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientPriority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TargetDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductArea)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientPriority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TargetDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductArea)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Title_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Title_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Title_id })
+        </td>
+    </tr>
+}
+
+</table>
