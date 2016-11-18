@@ -22,7 +22,7 @@ https://msdn.microsoft.com/en-us/library/mt238290.aspx
 https://www.visualstudio.com/vs/community/
 
 > This project requires the following NuGet packages: bootstrap, EntityFramework v6, and Microsoft.AspNet.Mvc
-They should be downloaded automatically by visual studio, but you may need to re-download them if they don't.
+They should be downloaded automatically by Visual Studio, but you may need to re-download them if they don't.
     
 ### How to view project
 
