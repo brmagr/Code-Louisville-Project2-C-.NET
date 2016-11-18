@@ -18,7 +18,6 @@ By clicking the save button, the information is saved to a database so that othe
 https://www.microsoft.com/en-us/sql-server/sql-server-editions-developers
 2. Download and Install SSMS 2016 (SQL Server Management Studio) from 
 https://msdn.microsoft.com/en-us/library/mt238290.aspx
-  a. You will need to run the script.sql file before loading the project in Visual Studio
 3. Download and Install Microsoft Visual Studio Community 2015 from
 https://www.visualstudio.com/vs/community/
 
