@@ -4,54 +4,53 @@
     ViewBag.Title = "Index";
 }
 
+
 <h2>Feature Request Form Database</h2>
 @{/* Redirects user to Request Form */}
 <p>
-    @Html.ActionLink("New Form Entry", "Create")
+    @Html.ActionLink("New Form Entry    ", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Client)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ClientPriority)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TargetDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductArea)
-        </th>
-        <th></th>
-    </tr>
+    <div>
+        <div class="col-xs-3"><b>
+    @Html.DisplayNameFor(model => model.Description)
+        </b></div>
+        <div class="col-xs-2"><b>
+    @Html.DisplayNameFor(model => model.Client)
+        </b></div>
+        <div class="col-xs-2"><b>
+    @Html.DisplayNameFor(model => model.ClientPriority)
+        </b></div>
+        <div class="col-xs-2"><b>
+    @Html.DisplayNameFor(model => model.TargetDate)
+        </b></div>
+        <div class="col-xs-2"><b>
+    @Html.DisplayNameFor(model => model.ProductArea)
+        </b></div>
+    </div>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
+    <div>
+        <div class="col-xs-3">
             @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
+        </div>
+        <div  class="col-xs-2">
             @Html.DisplayFor(modelItem => item.Client)
-        </td>
-        <td>
+        </div>
+        <div  class="col-xs-2">
             @Html.DisplayFor(modelItem => item.ClientPriority)
-        </td>
-        <td>
+        </div>
+        <div class="col-xs-2">
             @Html.DisplayFor(modelItem => item.TargetDate)
-        </td>
-        <td>
+        </div>
+        <div  class="col-xs-1">
             @Html.DisplayFor(modelItem => item.ProductArea)
-        </td>
-        <td>
+        </div>
+        <div class="col-xs-11">
             @Html.ActionLink("Edit", "Edit", new { id=item.Title_id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Title_id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Title_id })
-        </td>
-    </tr>
+        </div>
+    </div>
 }
 
-</table>
+</div>
